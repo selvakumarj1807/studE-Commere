@@ -122,14 +122,12 @@ if (!isset($_SESSION['username'])) // If session is not set then redirect to Log
                         <?php
                         $result = mysqli_query($conn, "SELECT * FROM category");
                         while ($row_result = mysqli_fetch_array($result)) {
-                            $c_id = $row_result['c_id'];
+                            $category_id = $row_result['id'];
                             $category = $row_result['category'];
-                            $image = $row_result['image'];
-
                         ?>
                             <ul class="treeview-menu">
-                                <input type="hidden" id="cid" name="cid" value="<?php echo $c_id; ?>" />
-                                <li><a href="product.php?category=<?php echo $category; ?>" /><?php echo $category; ?></a></li>
+                                <input type="hidden" id="cid" name="cid" value="<?php echo $category_id; ?>" />
+                                <li><a href="product.php?category=<?php echo $category; ?>"><?php echo $category; ?></a></li>
                             </ul>
                         <?php } ?>
                     </li>
