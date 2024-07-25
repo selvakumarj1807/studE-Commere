@@ -171,7 +171,7 @@ if (!isset($_SESSION['username'])) // If session is not set then redirect to Log
                     <li class="treeview">
                         <a href="changepassword.php">
                             <i class="fa fa-laptop"></i>
-                            <span>Change Password</span>
+                            <span>Change Admin Password</span>
                         </a>
                     </li>
 
