@@ -79,7 +79,7 @@ $product_count = mysqli_num_rows($row7);
                         <div class="icon">
                             <img src="img/pin.png" width='60' height='60' />
                         </div>
-                        <a href="addCateegory.php" class="small-box-footer">Add Category <i class="fa fa-arrow-circle-right"></i></a>
+                        <a href="addCategory.php" class="small-box-footer">Add Category <i class="fa fa-arrow-circle-right"></i></a>
 
 
                     </div>

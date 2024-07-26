@@ -115,7 +115,7 @@ if (!isset($_SESSION['username'])) // If session is not set then redirect to Log
                     </li>
 
                     <li class="active treeview">
-                        <a href="#">
+                        <a href="addCategory.php">
                             <i class="fa fa-edit"></i> <span>Category</span>
                             <i class="fa fa-angle-left pull-right"></i>
                         </a>

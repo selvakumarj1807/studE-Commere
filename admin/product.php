@@ -25,11 +25,13 @@ if (!isset($_SESSION['username'])) // If session is not set then redirect to Log
     <?php
 
     $category = $_GET["category"];
-    echo $category;
 
     ?>
     <div class="content-wrapper">
         <div class="container">
+            <center>
+                <h1><?php echo $category; ?></h1>
+            </center>
             <br>
             <section class="content-header">
                 <h1>
@@ -102,8 +104,8 @@ if (!isset($_SESSION['username'])) // If session is not set then redirect to Log
                                     <td><?php echo $display; ?></td>
                                     <td><?php echo $offer; ?></td>
                                     <td class="text-center">
-                                        <a href="product_edit.php?id=<?php echo $row_result['id']; ?>">product Edit<i class="fa fa-edit" style="color:red"></i></a> &nbsp;&nbsp;&nbsp;
-                                        <a href="product_remove.php?id=<?php echo $row_result['id']; ?>&category=<?php echo $row_result['category']; ?>">Product Remove<i class="fa fa-trash" aria-hidden="true"></i></a>
+                                        <a href="product_edit.php?id=<?php echo $row_result['id']; ?>">product Edit<i class="fa fa-edit"></i></a> &nbsp;&nbsp;&nbsp;
+                                        <a href="product_remove.php?id=<?php echo $row_result['id']; ?>&category=<?php echo $row_result['category']; ?>">Product Remove<i class="fa fa-trash" aria-hidden="true" style="color:red"></i></a>
                                     </td>
                                 </tr>
                             <?php

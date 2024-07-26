@@ -10,7 +10,7 @@ $sql="UPDATE `admin` SET `password`='$confirm_password' WHERE `username`= '$user
 if($conn->query($sql)==TRUE)
 {
     echo "<script> alert('User Password Updated Successfully.! '); </script>";
-    echo "<script type='text/javascript'>window.location.href = 'dashboard.php';</script>";
+    echo "<script type='text/javascript'>window.location.href = 'index.php';</script>";
 	}
 
 ?>

@@ -49,7 +49,7 @@ if (!isset($_SESSION['username'])) // If session is not set then redirect to Log
                                 <br>
 
                                 <button type="submit" class="btn btn-primary">Submit</button>
-                            </div><!-- /.box-body -->
+                            </div>
                     </div>
 
                     </form>
@@ -91,8 +91,8 @@ if (!isset($_SESSION['username'])) // If session is not set then redirect to Log
                                         <td><?php echo $category; ?></td>
                                         <td><img class="img-responsive" width="40" height="55" src="Upload/<?php echo $image; ?>" /></td>
                                         <td class="text-center">
-                                            <a href="edit_cate.php?id=<?php echo $row_result['id']; ?>">Edit<i class="fa fa-edit" style="color:red"></i></a> &nbsp;&nbsp;&nbsp;
-                                            <a href="remove_cate.php?id=<?php echo $row_result['id']; ?>">Remove<i class="fa fa-trash" aria-hidden="true"></i></a>&nbsp;&nbsp;&nbsp;
+                                            <a href="edit_category.php?id=<?php echo $row_result['id']; ?>">Edit<i class="fa fa-edit" style="color:red"></i></a> &nbsp;&nbsp;&nbsp;
+                                            <a href="remove_category.php?id=<?php echo $row_result['id']; ?>">Remove<i class="fa fa-trash" aria-hidden="true"></i></a>&nbsp;&nbsp;&nbsp;
                                         </td>
                                     </tr>
                                 <?php
