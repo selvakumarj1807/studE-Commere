@@ -52,83 +52,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 <body>
 	<!-- header -->
-	<div class="agileits_header">
-		<div class="w3l_offers">
-			<a href="products.php">Today's special Offers !</a>
-		</div>
-		<div class="w3l_search">
-			<form action="#" method="post">
-				<input type="text" name="Product" value="Search a product..." onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search a product...';}" required="">
-				<input type="submit" value=" ">
-			</form>
-		</div>
-		<div class="product_list_header">
-			<form action="#" method="post" class="last">
-				<fieldset>
-					<input type="hidden" name="cmd" value="_cart" />
-					<input type="hidden" name="display" value="1" />
-					<input type="submit" name="submit" value="View your cart" class="button" />
-				</fieldset>
-			</form>
-		</div>
-		<div class="w3l_header_right">
-			<ul>
-				<li class="dropdown profile_details_drop">
-					<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user" aria-hidden="true"></i><span class="caret"></span></a>
-					<div class="mega-dropdown-menu">
-						<div class="w3ls_vegetables">
-							<ul class="dropdown-menu drp-mnu">
-								<li><a href="login.php">Login</a></li>
-								<li><a href="login.php">Sign Up</a></li>
-							</ul>
-						</div>
-					</div>
-				</li>
-			</ul>
-		</div>
-		<div class="w3l_header_right1">
-			<h2><a href="mail.php">Contact Us</a></h2>
-		</div>
-		<div class="clearfix"> </div>
-	</div>
-	<!-- script-for sticky-nav -->
-	<script>
-		$(document).ready(function() {
-			var navoffeset = $(".agileits_header").offset().top;
-			$(window).scroll(function() {
-				var scrollpos = $(window).scrollTop();
-				if (scrollpos >= navoffeset) {
-					$(".agileits_header").addClass("fixed");
-				} else {
-					$(".agileits_header").removeClass("fixed");
-				}
-			});
-
-		});
-	</script>
-	<!-- //script-for sticky-nav -->
-	<div class="logo_products">
-		<div class="container">
-			<div class="w3ls_logo_products_left">
-				<h1><a href="index.php"><span>Home</span>ShopingMart</a></h1>
-			</div>
-			<div class="w3ls_logo_products_left1">
-				<ul class="special_items">
-					<li><a href="events.php">Events</a><i>/</i></li>
-					<li><a href="about.php">About Us</a><i>/</i></li>
-					<li><a href="products.php">Best Deals</a><i>/</i></li>
-					<li><a href="services.php">Services</a></li>
-				</ul>
-			</div>
-			<div class="w3ls_logo_products_left1">
-				<ul class="phone_email">
-					<li><i class="fa fa-phone" aria-hidden="true"></i>+91 7262061050</li>
-					<li><i class="fa fa-envelope-o" aria-hidden="true"></i><a href="nrstechsolution@gmail.com">nrstechsolution@gmail.com</a></li>
-				</ul>
-			</div>
-			<div class="clearfix"> </div>
-		</div>
-	</div>
+	<?php include('header.php') ?>
 	<!-- //header -->
 	<!-- banner -->
 	<div class="banner">
@@ -144,49 +68,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					</button>
 				</div>
 				<!-- Collect the nav links, forms, and other content for toggling -->
-				<div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
-					<ul class="nav navbar-nav nav_1">
-						<li><a href="products.php">Branded Foods</a></li>
-						<li><a href="household.php">Households</a></li>
-						<li class="dropdown mega-dropdown active">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Veggies & Fruits<span class="caret"></span></a>
-							<div class="dropdown-menu mega-dropdown-menu w3ls_vegetables_menu">
-								<div class="w3ls_vegetables">
-									<ul>
-										<li><a href="vegetables.php">Vegetables</a></li>
-										<li><a href="vegetables.php">Fruits</a></li>
-									</ul>
-								</div>
-							</div>
-						</li>
-						<li><a href="kitchen.php">Kitchen</a></li>
-						<li><a href="short-codes.php">Short Codes</a></li>
-						<li class="dropdown">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Beverages<span class="caret"></span></a>
-							<div class="dropdown-menu mega-dropdown-menu w3ls_vegetables_menu">
-								<div class="w3ls_vegetables">
-									<ul>
-										<li><a href="drinks.php">Soft Drinks</a></li>
-										<li><a href="drinks.php">Juices</a></li>
-									</ul>
-								</div>
-							</div>
-						</li>
-						<li><a href="pet.php">Pet Food</a></li>
-						<li class="dropdown">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Frozen Foods<span class="caret"></span></a>
-							<div class="dropdown-menu mega-dropdown-menu w3ls_vegetables_menu">
-								<div class="w3ls_vegetables">
-									<ul>
-										<li><a href="frozen.php">Frozen Snacks</a></li>
-										<li><a href="frozen.php">Frozen Nonveg</a></li>
-									</ul>
-								</div>
-							</div>
-						</li>
-						<li><a href="bread.php">Bread & Bakery</a></li>
-					</ul>
-				</div><!-- /.navbar-collapse -->
+				<?php include('sideNavbar.php') ?>
+				<!-- /.navbar-collapse -->
 			</nav>
 		</div>
 		<div class="w3l_banner_nav_right">
